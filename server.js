@@ -3,11 +3,7 @@ var path = require('path');
 
 var app = express();
 
-app.use('/app', express.static(path.join(__dirname, './app')));
-
-app.use('/test', express.static(path.join(__dirname, './app')));
-
-app.use('/test', express.static(path.join(__dirname, './test')));
+app.use('/', express.static(path.join(__dirname, './app')));
 
 
 var server = app.listen(3000, function(){
