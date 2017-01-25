@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link href="https://cdn.rawgit.com/mochajs/mocha/2.2.5/mocha.css" rel="stylesheet" />
   <title></title>
 </head>
 <body>
-  <p>Hello World (test</p>
+  <p>War Game tests</p>
+  <div id="mocha"></div>
+  <script src="https://cdn.rawgit.com/mochajs/mocha/2.2.5/mocha.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"></script>
+  <script>mocha.setup('bdd');</script>
+  <script src="../game/warGame.js"></script>
+  <script src="./warGameTests.js"></script>
+  <script>mocha.run();</script>
 </body>
 </html>
